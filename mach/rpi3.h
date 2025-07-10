@@ -39,8 +39,8 @@ gpio readall
 */
 
 #ifndef TEST_DECODING
-#define MAX_GPIO 53
-#define DEFAULT_PIN 27
+#define MAX_GPIO 1024 // is this correct? since kernel 6.6. the GPIO numbers are no longer 0 based so increase the MAX_GPIO
+#define DEFAULT_PIN 539 // GPIO27 is now PIN 539
 #endif
 
 #endif /* MACH_RPI3_H_ */
